@@ -1,0 +1,98 @@
+:root {
+    /* defaults, eg. background color*/
+    --default1: #242424;
+    --default2: #303030;
+    --default3: #444444;
+
+    /* accents */
+    --accent1: #404040;
+    --accent2: #d9d9d9;
+    --accent3: #ffffff;
+
+    /* special accent */
+    --trueaccent: #ccbeff;
+
+    background-color: var(--default1)
+}
+
+/* scene 1 */
+
+#scene1 {
+    visibility: visible;
+}
+
+#login > img {
+    width: 125px;
+    height: 125px;
+    background: var(--accent1);
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#login > p {
+    color: var(--accent3);
+    font-family: monospace;
+    font-size: 1.5em;
+    width: 100vw;
+    margin-top: 0;
+}
+
+#login > button {
+    font-family: monospace;
+    background-color: var(--accent1);
+    border: none;
+    color: var(--trueaccent);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+#login > button:hover {
+    background-color: var(--default3);
+}
+
+#login {
+    position: fixed;
+    inset: 0px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+}
+
+/* scene 2 */
+
+#scene2 {
+    visibility: hidden;
+}
+
+#sidebar {
+    max-width: 15vw;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--default2);
+}
+
+#sidebar > button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#active-dot {
+    max-width: 2vh;
+    max-height: 2vh;
+}
+
+#sidebar > button > #icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+#sidebar > button > img {
+    max-width: 12vw;
+    max-height: 9.6vw;
+    margin: 10%;
+}
