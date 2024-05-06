@@ -96,3 +96,14 @@
     max-height: 9.6vw;
     margin: 10%;
 }
+
+/* scene 3 (terminal window) */
+#terminal-window {
+    position: fixed;
+    inset: 0px;
+    max-width: fit-content;
+    height: fit-content;
+    margin: auto;
+    visibility: hidden;
+    background-color: white;
+}
