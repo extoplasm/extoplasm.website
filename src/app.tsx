@@ -37,7 +37,7 @@ function App() {
             }
           }
           setTimeout(typingEffect, 1000);
-          setTimeout(() => {document.getElementById('website-window')!.style.visibility = 'visible'}, 3000)
+          setTimeout(() => {document.getElementById('website-window')!.style.visibility = 'visible'}, 2500)
         })}>
           <div id="icon">
             <img src={clicked ? terminalIconActive : emptyIcon} alt="active" id='active-dot'/>
@@ -61,6 +61,8 @@ function App() {
         <p>x</p>
       </div>
       <div id="website-window-content">
+        <h1>extoplasm</h1>
+        <p>i (sometimes) code stuff</p>
       </div>
     </div>
   </>

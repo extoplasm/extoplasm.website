@@ -131,10 +131,31 @@
     font-family: monospace;
     position: fixed;
     inset: 0px;
-    max-width: 100vh;
-    max-height: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     margin: auto;
     visibility: hidden;
     background-color: var(--default2);
     color: var(--accent3)
+}
+
+#website-window > #website-window-header {
+    background-color: var(--accent3);
+    color: var(--default1);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#website-window > #website-window-header > p {
+    padding: 0px 10px;
+}
+
+#website-window > #website-window-content > p {
+    padding: 0px 10px;
+}
+
+#website-window > #website-window-content > h1 {
+    text-align: center;
+    line-height: .3;
 }
