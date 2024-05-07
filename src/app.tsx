@@ -31,12 +31,13 @@ function App() {
           let text = './index.html'
           const typingEffect  = () => {
             if (i < text.length) {
-              document.querySelector('#terminal-window > #window-content > #terminal-text')!.innerHTML += text.charAt(i);
+              document.querySelector('#terminal-window > #terminal-window-content > #terminal-text')!.innerHTML += text.charAt(i);
               i++;
               setTimeout(typingEffect, 50)
             }
           }
           setTimeout(typingEffect, 1000);
+          setTimeout(() => {document.getElementById('website-window')!.style.visibility = 'visible'}, 3000)
         })}>
           <div id="icon">
             <img src={clicked ? terminalIconActive : emptyIcon} alt="active" id='active-dot'/>
@@ -46,12 +47,20 @@ function App() {
       </div>
     </div>
     <div id="terminal-window">
-      <div id="window-header">
+      <div id="terminal-window-header">
         <p>terminal</p>
         <p>x</p>
       </div>
-      <div id="window-content">
+      <div id="terminal-window-content">
         <p id="terminal-text">extoplasm:-$ </p>
+      </div>
+    </div>
+    <div id="website-window">
+      <div id="website-window-header">
+        <p>index.html</p>
+        <p>x</p>
+      </div>
+      <div id="website-window-content">
       </div>
     </div>
   </>

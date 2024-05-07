@@ -92,18 +92,49 @@
 }
 
 #sidebar > button > img {
-    max-width: 12vw;
-    max-height: 9.6vw;
+    max-width: 5vw;
+    max-height: 4vw;
     margin: 10%;
 }
 
 /* scene 3 (terminal window) */
 #terminal-window {
+    font-family: monospace;
     position: fixed;
     inset: 0px;
-    max-width: fit-content;
-    height: fit-content;
+    max-width: 50%;
+    height: 50%;
     margin: auto;
     visibility: hidden;
-    background-color: white;
+    background-color: var(--default2);
+    color: var(--accent3)
+}
+
+#terminal-window > #terminal-window-header {
+    background-color: var(--accent3);
+    color: var(--default1);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#terminal-window > #terminal-window-header > p {
+    padding: 0px 10px;
+}
+
+#terminal-window > #terminal-window-content > p {
+    padding: 0px 10px;
+}
+
+/* scene 4 (website) */
+#website-window {
+    font-family: monospace;
+    position: fixed;
+    inset: 0px;
+    max-width: 100vh;
+    max-height: 100vw;
+    margin: auto;
+    visibility: hidden;
+    background-color: var(--default2);
+    color: var(--accent3)
 }
