@@ -4,6 +4,7 @@ import userIcon from './assets/user-icon.svg'
 import terminalIcon from './assets/terminal-icon.svg'
 import terminalIconActive from './assets/terminal-icon-active.svg'
 import emptyIcon from './assets/empty-icon.svg'
+import wallpaperSmile from './assets/wallpaper-smile.svg'
 
 function App() {
   const [clicked, setClicked ] = useState(0)
@@ -44,6 +45,9 @@ function App() {
             <img src={terminalIcon} alt="terminal icon" />
           </div>
         </button>
+      </div>
+      <div id="wallpaper">
+        <img src={wallpaperSmile} alt="wallpaper" />
       </div>
     </div>
     <div id="terminal-window">
