@@ -67,6 +67,25 @@ function App() {
       <div id="website-window-content">
         <h1>extoplasm</h1>
         <p>i (sometimes) code stuff</p>
+        <ul id="links">
+          <li>
+            <a href="https://github.com/extoplasm" id="github-link" target="_blank">github</a>
+          </li>
+          <li>
+            <a href="https://youtube.com/@extoplasm" id="youtube-link" target="_blank">youtube</a>
+          </li>
+          <li id="discord-username">
+            <button onClick={() => {
+              navigator.clipboard.writeText('@extoplasm');
+              document.querySelector('#discord-username > button')!.innerHTML = 'copied to clipboard!'
+              setTimeout(() => {
+                document.querySelector('#discord-username > button')!.innerHTML = 'discord'
+              }, 1000)
+            }}>
+              discord
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   </>

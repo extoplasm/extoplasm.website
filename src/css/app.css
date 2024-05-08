@@ -176,3 +176,22 @@
     text-align: center;
     line-height: .3;
 }
+
+#links {
+    display: inline-block;
+}
+
+#links > li > a {
+    color: var(--trueaccent)
+}
+
+#links > #discord-username > button {
+    border: none;
+    font-family: monospace;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--trueaccent);
+    text-decoration: underline;
+    padding: 0;
+}
